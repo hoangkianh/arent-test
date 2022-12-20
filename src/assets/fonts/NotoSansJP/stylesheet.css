@@ -1,0 +1,78 @@
+@font-face {
+    font-family: '';
+    src: url('NotoSansJP-Light.eot');
+    src: url('NotoSansJP-Light.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansJP-Light.woff2') format('woff2'),
+        url('NotoSansJP-Light.woff') format('woff'),
+        url('NotoSansJP-Light.ttf') format('truetype'),
+        url('NotoSansJP-Light.svg#NotoSansJP-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansJP-Bold.eot');
+    src: url('NotoSansJP-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansJP-Bold.woff2') format('woff2'),
+        url('NotoSansJP-Bold.woff') format('woff'),
+        url('NotoSansJP-Bold.ttf') format('truetype'),
+        url('NotoSansJP-Bold.svg#NotoSansJP-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansJP-Black.eot');
+    src: url('NotoSansJP-Black.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansJP-Black.woff2') format('woff2'),
+        url('NotoSansJP-Black.woff') format('woff'),
+        url('NotoSansJP-Black.ttf') format('truetype'),
+        url('NotoSansJP-Black.svg#NotoSansJP-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansJP-Thin.eot');
+    src: url('NotoSansJP-Thin.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansJP-Thin.woff2') format('woff2'),
+        url('NotoSansJP-Thin.woff') format('woff'),
+        url('NotoSansJP-Thin.ttf') format('truetype'),
+        url('NotoSansJP-Thin.svg#NotoSansJP-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansJP-Regular.eot');
+    src: url('NotoSansJP-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansJP-Regular.woff2') format('woff2'),
+        url('NotoSansJP-Regular.woff') format('woff'),
+        url('NotoSansJP-Regular.ttf') format('truetype'),
+        url('NotoSansJP-Regular.svg#NotoSansJP-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansJP-Medium.eot');
+    src: url('NotoSansJP-Medium.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansJP-Medium.woff2') format('woff2'),
+        url('NotoSansJP-Medium.woff') format('woff'),
+        url('NotoSansJP-Medium.ttf') format('truetype'),
+        url('NotoSansJP-Medium.svg#NotoSansJP-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
