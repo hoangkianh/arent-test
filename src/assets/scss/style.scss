@@ -1,2 +1,26 @@
 @import url('../fonts/Inter/stylesheet.css');
 @import url('../fonts/Inter/stylesheet.css');
+@import url('../fonts/icons/style.css');
+
+body {
+  font-family: 'NotoSansJP', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #414141;
+}
+
+a {
+  text-decoration: none;
+  color: #414141;
+  transition: all .3s ease;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}

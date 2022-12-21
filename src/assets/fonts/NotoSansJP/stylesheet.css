@@ -1,5 +1,5 @@
 @font-face {
-    font-family: '';
+    font-family: 'NotoSansJP';
     src: url('NotoSansJP-Light.eot');
     src: url('NotoSansJP-Light.eot?#iefix') format('embedded-opentype'),
         url('NotoSansJP-Light.woff2') format('woff2'),
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: '';
+    font-family: 'NotoSansJP';
     src: url('NotoSansJP-Bold.eot');
     src: url('NotoSansJP-Bold.eot?#iefix') format('embedded-opentype'),
         url('NotoSansJP-Bold.woff2') format('woff2'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: '';
+    font-family: 'NotoSansJP';
     src: url('NotoSansJP-Black.eot');
     src: url('NotoSansJP-Black.eot?#iefix') format('embedded-opentype'),
         url('NotoSansJP-Black.woff2') format('woff2'),
@@ -38,7 +38,7 @@
 }
 
 @font-face {
-    font-family: '';
+    font-family: 'NotoSansJP';
     src: url('NotoSansJP-Thin.eot');
     src: url('NotoSansJP-Thin.eot?#iefix') format('embedded-opentype'),
         url('NotoSansJP-Thin.woff2') format('woff2'),
@@ -51,7 +51,7 @@
 }
 
 @font-face {
-    font-family: '';
+    font-family: 'NotoSansJP';
     src: url('NotoSansJP-Regular.eot');
     src: url('NotoSansJP-Regular.eot?#iefix') format('embedded-opentype'),
         url('NotoSansJP-Regular.woff2') format('woff2'),
@@ -64,7 +64,7 @@
 }
 
 @font-face {
-    font-family: '';
+    font-family: 'NotoSansJP';
     src: url('NotoSansJP-Medium.eot');
     src: url('NotoSansJP-Medium.eot?#iefix') format('embedded-opentype'),
         url('NotoSansJP-Medium.woff2') format('woff2'),
