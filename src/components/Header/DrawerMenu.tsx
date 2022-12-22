@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { DrawerMenuItem, DrawerMenuWrapper, DrawerMenuList, ToggleButton } from './Styled'
+import { DrawerMenuItem, DrawerMenuWrapper, DrawerMenuList, ToggleButton, FlexLink } from './Styled'
 
 function DrawerMenu(): JSX.Element {
   const [open, setOpen] = useState(false)
@@ -26,6 +26,24 @@ function DrawerMenu(): JSX.Element {
       </ToggleButton>
       {open && (
         <DrawerMenuList>
+          <DrawerMenuItem className="d-block d-md-none">
+            <FlexLink to="/my-record">
+              <i className="healthy-challenge" />
+              <span>自分の記録</span>
+            </FlexLink>
+          </DrawerMenuItem>
+          <DrawerMenuItem className="d-block d-md-none">
+            <FlexLink to="/">
+              <i className="healthy-record" />
+              <span>チャレンジ</span>
+            </FlexLink>
+          </DrawerMenuItem>
+          <DrawerMenuItem className="d-block d-md-none">
+            <FlexLink to="/">
+              <i className="healthy-notification" />
+              <span>お知らせ</span>
+            </FlexLink>
+          </DrawerMenuItem>
           <DrawerMenuItem>
             <Link to="/my-record">自分の記録</Link>
           </DrawerMenuItem>

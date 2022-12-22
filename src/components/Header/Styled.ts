@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components/macro'
 
 export const HeaderWrapper = styled.div`
@@ -13,33 +14,36 @@ export const LogoImage = styled.img`
   height: 40px;
 `
 export const MainMenu = styled.ul`
-  list-style-type: none;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-end;
-`
-export const MainMenuItem = styled.li`
-  margin: 0 32px;
 
-  a {
+  @media (min-width: 768px) {
     display: flex;
-    align-items: center;
-    color: #fff;
+  }
+`
+export const FlexLink = styled(Link)`
+  display: flex !important;
+  align-items: center;
+  color: #fff;
 
-    &:hover {
-      color: ${props => props.theme.primary[400]};
-    }
+  &:hover {
+    color: ${props => props.theme.primary[400]};
   }
 
   i {
-    font-size: 24px;
+    font-size: 32px;
     color: ${props => props.theme.primary[400]};
   }
 
   span {
     display: inline-block;
     margin-left: 8px;
+    padding: 0 !important;
   }
+`
+export const MainMenuItem = styled.li`
+  margin: 0 32px;
 `
 export const ToggleButton = styled.div`
   margin-left: 32px;
@@ -72,8 +76,12 @@ export const DrawerMenuItem = styled.li`
   a,
   span {
     display: block;
-    padding: 24px 32px;
+    padding: 12px 16px;
     color: #fff;
+
+    @media (min-width: 768px) {
+      padding: 24px 32px;
+    }
   }
 
   &:hover {
@@ -81,5 +89,23 @@ export const DrawerMenuItem = styled.li`
     span {
       color: ${props => props.theme.primary[400]};
     }
+  }
+`
+export const Notification = styled.div`
+  position: relative;
+
+  span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -8px;
+    border-radius: 100%;
+    background-color: ${props => props.theme.primary[500]};
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+    line-height: 16px;
   }
 `
