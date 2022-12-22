@@ -2,7 +2,12 @@
 @import url('../fonts/Inter/stylesheet.css');
 @import url('../fonts/icons/style.css');
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  overflow-x: hidden;
   font-family: 'NotoSansJP', sans-serif;
   font-size: 1rem;
   line-height: 1.5;

@@ -37,6 +37,12 @@
 .healthy-menu:before {
   content: "\e903";
 }
+.healthy-meal:before {
+  content: "\e905";
+}
 .healthy-close:before {
   content: "\e904";
+}
+.healthy-snack:before {
+  content: "\e906";
 }
