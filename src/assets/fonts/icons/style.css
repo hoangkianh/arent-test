@@ -27,48 +27,16 @@
 
 .healthy-challenge:before {
   content: "\e900";
-  color: #ff963c;
 }
 .healthy-record:before {
   content: "\e901";
-  color: #ff963c;
 }
 .healthy-notification:before {
   content: "\e902";
-  color: #ff963c;
 }
-.healthy-close .path1:before {
+.healthy-menu:before {
   content: "\e903";
-  color: rgb(255, 150, 60);
-  opacity: 0.0100;
 }
-.healthy-close .path2:before {
+.healthy-close:before {
   content: "\e904";
-  margin-left: -1em;
-  color: rgb(255, 150, 60);
-}
-.healthy-close .path3:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: rgb(255, 150, 60);
-}
-.healthy-menu .path1:before {
-  content: "\e906";
-  color: rgb(255, 150, 60);
-  opacity: 0.0100;
-}
-.healthy-menu .path2:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: rgb(255, 150, 60);
-}
-.healthy-menu .path3:before {
-  content: "\e908";
-  margin-left: -1em;
-  color: rgb(255, 150, 60);
-}
-.healthy-menu .path4:before {
-  content: "\e909";
-  margin-left: -1em;
-  color: rgb(255, 150, 60);
 }

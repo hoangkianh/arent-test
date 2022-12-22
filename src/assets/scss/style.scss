@@ -19,6 +19,11 @@ a {
   }
 }
 
+p,
+span {
+  transition: all .3s ease;
+}
+
 ol,
 ul {
   padding: 0;

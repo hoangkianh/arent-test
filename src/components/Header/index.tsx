@@ -1,7 +1,8 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { HeaderWrapper, LogoImage, MenuList, MenuListItem } from './Styled'
+import { HeaderWrapper, LogoImage, MainMenu, MainMenuItem } from './Styled'
 import LogoPNG from 'assets/images/logo.png'
+import DrawerMenu from './DrawerMenu'
 
 function Header(): JSX.Element {
   return (
@@ -9,29 +10,33 @@ function Header(): JSX.Element {
       <Container>
         <Row className="align-items-center justify-content-between">
           <Col xs={6} md={2}>
-            <LogoImage src={LogoPNG} alt="Healthy" />
+            <Link to="/">
+              <LogoImage src={LogoPNG} alt="Healthy" />
+            </Link>
           </Col>
-          <Col xs={6} md={8}>
-            <MenuList>
-              <MenuListItem>
+          <Col xs={6} md={8} className="d-flex justify-content-end">
+            <MainMenu>
+              <MainMenuItem>
                 <Link to="/">
                   <i className="healthy-challenge" />
                   <span>自分の記録</span>
                 </Link>
-              </MenuListItem>
-              <MenuListItem>
+              </MainMenuItem>
+              <MainMenuItem>
                 <Link to="/">
                   <i className="healthy-record" />
                   <span>チャレンジ</span>
                 </Link>
-              </MenuListItem>
-              <MenuListItem>
+              </MainMenuItem>
+              <MainMenuItem>
                 <Link to="/">
                   <i className="healthy-notification" />
                   <span>お知らせ</span>
                 </Link>
-              </MenuListItem>
-            </MenuList>
+              </MainMenuItem>
+            </MainMenu>
+
+            <DrawerMenu />
           </Col>
         </Row>
       </Container>

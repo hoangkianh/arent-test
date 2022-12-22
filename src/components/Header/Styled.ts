@@ -12,13 +12,13 @@ export const HeaderWrapper = styled.div`
 export const LogoImage = styled.img`
   height: 40px;
 `
-export const MenuList = styled.ul`
+export const MainMenu = styled.ul`
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 `
-export const MenuListItem = styled.li`
+export const MainMenuItem = styled.li`
   margin: 0 32px;
 
   a {
@@ -32,11 +32,54 @@ export const MenuListItem = styled.li`
   }
 
   i {
-    font-size: 20px;
+    font-size: 24px;
+    color: ${props => props.theme.primary[400]};
   }
 
   span {
     display: inline-block;
     margin-left: 8px;
+  }
+`
+export const ToggleButton = styled.div`
+  margin-left: 32px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    color: ${props => props.theme.primary[400]};
+  }
+`
+export const DrawerMenuWrapper = styled.div`
+  position: relative;
+`
+export const DrawerMenuList = styled.ul`
+  position: absolute;
+  width: 280px;
+  top: 150%;
+  right: 0;
+  background-color: ${props => props.theme.gray};
+  z-index: 99;
+  transition: all 0.3s ease;
+`
+export const DrawerMenuItem = styled.li`
+  border-top: 1px solid ${props => props.theme.light}26;
+  border-bottom: 1px solid ${props => props.theme.dark[600]}26;
+
+  a,
+  span {
+    display: block;
+    padding: 24px 32px;
+    color: #fff;
+  }
+
+  &:hover {
+    a,
+    span {
+      color: ${props => props.theme.primary[400]};
+    }
   }
 `
