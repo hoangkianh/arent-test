@@ -4,6 +4,7 @@ import 'assets/scss/style.scss'
 import { ThemeProvider } from 'styled-components/macro'
 import theme from 'theme'
 import Header from 'components/Header'
+import Footer from 'components/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<></>} />
         </Routes>
+        <Footer />
       </Router>
     </ThemeProvider>
   )

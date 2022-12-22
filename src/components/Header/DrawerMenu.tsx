@@ -26,19 +26,19 @@ function DrawerMenu(): JSX.Element {
       </ToggleButton>
       {open && (
         <DrawerMenuList>
-          <DrawerMenuItem className="d-block d-md-none">
+          <DrawerMenuItem className="d-block d-lg-none">
             <FlexLink to="/my-record">
               <i className="healthy-challenge" />
               <span>自分の記録</span>
             </FlexLink>
           </DrawerMenuItem>
-          <DrawerMenuItem className="d-block d-md-none">
+          <DrawerMenuItem className="d-block d-lg-none">
             <FlexLink to="/">
               <i className="healthy-record" />
               <span>チャレンジ</span>
             </FlexLink>
           </DrawerMenuItem>
-          <DrawerMenuItem className="d-block d-md-none">
+          <DrawerMenuItem className="d-block d-lg-none">
             <FlexLink to="/">
               <i className="healthy-notification" />
               <span>お知らせ</span>

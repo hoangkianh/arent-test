@@ -18,7 +18,7 @@ export const MainMenu = styled.ul`
   align-items: center;
   justify-content: flex-end;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 `
@@ -81,7 +81,7 @@ export const DrawerMenuItem = styled.li`
     padding: 12px 16px;
     color: #fff;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       padding: 24px 32px;
     }
   }
