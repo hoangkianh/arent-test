@@ -54,6 +54,8 @@ export const ToggleButton = styled.div`
   i {
     display: inline-block;
     vertical-align: middle;
+    font-size: 20px;
+    line-height: 32px;
     color: ${props => props.theme.primary[400]};
   }
 `
@@ -63,7 +65,7 @@ export const DrawerMenuWrapper = styled.div`
 export const DrawerMenuList = styled.ul`
   position: absolute;
   width: 280px;
-  top: 150%;
+  top: 130%;
   right: 0;
   background-color: ${props => props.theme.gray};
   z-index: 99;
