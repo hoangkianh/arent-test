@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components/macro'
 import theme from 'theme'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
+import TopPage from 'pages/TopPage'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<></>} />
+          <Route path="/" element={<TopPage />} />
         </Routes>
         <Footer />
       </Router>
