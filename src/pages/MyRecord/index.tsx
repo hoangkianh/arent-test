@@ -4,6 +4,7 @@ import styled from 'styled-components/macro'
 import RecordCategoryBox from 'components/RecordCategoryBox'
 import BodyFatChart from 'components/BodyFatChart'
 import MyExercise from 'components/MyExercise'
+import MyDiary from 'components/MyDiary'
 import BodyRecordJPG from 'assets/images/body-record.jpg'
 import MyExerciseJPG from 'assets/images/my-exercise.jpg'
 import MyDiaryJPG from 'assets/images/my-diary.jpg'
@@ -53,6 +54,14 @@ function MyRecord() {
         <Col>
           <MarginedRow>
             <MyExercise />
+          </MarginedRow>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+          <MarginedRow>
+            <MyDiary />
           </MarginedRow>
         </Col>
       </Row>

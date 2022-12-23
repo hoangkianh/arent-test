@@ -8,3 +8,7 @@ export type Exercise = {
   kcal: number
   duration: number
 }
+export type Diary = {
+  date: number
+  excerpt: string
+}
