@@ -2,27 +2,19 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 import { Line } from 'react-chartjs-2'
 import styled from 'styled-components/macro'
 import bodyFatData from 'data/bodyfat.json'
-
-const BodyFatChartWrapper = styled.div.attrs(props => ({
-  // @ts-ignore
-  bgcolor: props.bgcolor || '#2e2e2e',
-}))`
-  background-color: ${props => props.bgcolor}};
-  max-height: 315px;
-  height: 100%;
-
-  canvas {
-    width: 100%;
-  }
-`
+import { Button } from 'react-bootstrap'
+import { BodyFatChartWrapper, ChartTitle, DateText, ChartButton } from './Styled'
 
 interface BodyFatChartProps {
   backgroundColor: string
+  maxHeight?: string
+  title?: string
+  showButtons?: boolean
 }
 
 function BodyFatChart(props: BodyFatChartProps): JSX.Element {
   ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement)
-  const { backgroundColor } = props
+  const { backgroundColor, maxHeight, title, showButtons } = props
 
   const options = {
     responsive: true,
@@ -68,9 +60,25 @@ function BodyFatChart(props: BodyFatChartProps): JSX.Element {
     ],
   }
 
+  const today = new Date()
+
   return (
-    <BodyFatChartWrapper bgcolor={backgroundColor}>
+    <BodyFatChartWrapper bgcolor={backgroundColor} height={maxHeight}>
+      {title && (
+        <div className="d-flex">
+          <ChartTitle>{title}</ChartTitle>
+          <DateText>{`${today.getMonth() + 1}.${today.getDate()}.${today.getFullYear()}`}</DateText>
+        </div>
+      )}
       <Line data={data} options={options} />
+      {showButtons && (
+        <div className="d-flex">
+          <ChartButton>日</ChartButton>
+          <ChartButton>週</ChartButton>
+          <ChartButton>月</ChartButton>
+          <ChartButton>年</ChartButton>
+        </div>
+      )}
     </BodyFatChartWrapper>
   )
 }

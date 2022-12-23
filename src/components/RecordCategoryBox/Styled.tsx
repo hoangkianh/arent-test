@@ -5,12 +5,16 @@ export const Box = styled.div`
   background-color: ${props => props.theme.primary[300]};
   padding: 24px;
   position: relative;
-  max-width: 288px;
+  // max-width: 288px;
   aspect-ratio: 1 / 1;
   cursor: pointer;
 
   @media (min-widht: 992px) {
     margin-top: 56px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 18px;
   }
 `
 export const Image = styled.div`
@@ -46,13 +50,17 @@ export const TextWrapper = styled.div`
 `
 export const Title = styled.p`
   margin-bottom: 10px;
-  font-size: 30px;
   line-height: 25px;
   letter-spacing: 0.125px;
   text-transform: uppercase;
   font-family: Inter, sans-serif;
   font-weight: 300;
+  font-size: 30px;
   color: ${props => props.theme.primary[300]};
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 20px;
+  }
 `
 export const Description = styled.span`
   display: inline-block;
