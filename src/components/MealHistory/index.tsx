@@ -16,8 +16,8 @@ function MealHistory(): JSX.Element {
       </Row>
 
       <MealHistoryWrapper>
-        {meals.map((m, index) => (
-          <MealBox key={index} meal={m} />
+        {meals.map(m => (
+          <MealBox key={m.id} meal={m} />
         ))}
       </MealHistoryWrapper>
       <GradientButton>

@@ -8,6 +8,7 @@ import Footer from 'components/Footer'
 import TopPage from 'pages/TopPage'
 import GoToTop from 'components/GoToTop'
 import MyRecord from 'pages/MyRecord'
+import ColumnPage from 'pages/Column'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<TopPage />} />
           <Route path="/my-record" element={<MyRecord />} />
+          <Route path="/column" element={<ColumnPage />} />
         </Routes>
         <GoToTop />
         <Footer />

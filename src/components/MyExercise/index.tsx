@@ -17,7 +17,7 @@ function MyExercise(): JSX.Element {
       <PerfectScrollbar>
         <MyExerciseList>
           {data.map(d => (
-            <MyExerciseItem exercise={d} />
+            <MyExerciseItem key={d.id} exercise={d} />
           ))}
         </MyExerciseList>
       </PerfectScrollbar>

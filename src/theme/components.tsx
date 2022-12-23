@@ -1,6 +1,13 @@
 import { Button } from 'react-bootstrap'
 import styled from 'styled-components/macro'
 
+export const MarginedRow = styled.div`
+  margin-top: 30px;
+
+  @media (min-width: 992px) {
+    margin-top: 56px;
+  }
+`
 export const GradientButton = styled(Button)`
   position: relative;
   z-index: 2;

@@ -1,5 +1,4 @@
 import { Col, Container, Row } from 'react-bootstrap'
-import styled from 'styled-components/macro'
 
 import RecordCategoryBox from 'components/RecordCategoryBox'
 import BodyFatChart from 'components/BodyFatChart'
@@ -8,14 +7,7 @@ import MyDiary from 'components/MyDiary'
 import BodyRecordJPG from 'assets/images/body-record.jpg'
 import MyExerciseJPG from 'assets/images/my-exercise.jpg'
 import MyDiaryJPG from 'assets/images/my-diary.jpg'
-
-const MarginedRow = styled.div`
-  margin-top: 30px;
-
-  @media (min-width: 992px) {
-    margin-top: 56px;
-  }
-`
+import { MarginedRow } from 'theme/components'
 
 function MyRecord() {
   return (
@@ -23,7 +15,7 @@ function MyRecord() {
       <Row>
         <Col xs={12} md={4}>
           <RecordCategoryBox
-            id="#body-record"
+            scrollToDiv="#body-record"
             imageUrl={BodyRecordJPG}
             title="Body Record"
             description="自分のカラダの記録"
@@ -31,18 +23,23 @@ function MyRecord() {
         </Col>
         <Col xs={12} md={4}>
           <RecordCategoryBox
-            id="#my-exercise"
+            scrollToDiv="#my-exercise"
             imageUrl={MyExerciseJPG}
             title="My Exercise"
             description="自分のカラダの記録"
           />
         </Col>
         <Col xs={12} md={4}>
-          <RecordCategoryBox id="#my-diary" imageUrl={MyDiaryJPG} title="My Diary" description="自分のカラダの記録" />
+          <RecordCategoryBox
+            scrollToDiv="#my-diary"
+            imageUrl={MyDiaryJPG}
+            title="My Diary"
+            description="自分のカラダの記録"
+          />
         </Col>
       </Row>
 
-      <Row>
+      <Row id="#body-record">
         <Col>
           <MarginedRow>
             <BodyFatChart backgroundColor="#2e2e2e" maxHeight="none" title="Body Record" showButtons={true} />
@@ -50,7 +47,7 @@ function MyRecord() {
         </Col>
       </Row>
 
-      <Row>
+      <Row id="#my-exercise">
         <Col>
           <MarginedRow>
             <MyExercise />
@@ -58,7 +55,7 @@ function MyRecord() {
         </Col>
       </Row>
 
-      <Row>
+      <Row id="#my-diary">
         <Col>
           <MarginedRow>
             <MyDiary />

@@ -1,16 +1,24 @@
 import { Box, Description, Image, TextWrapper, Title } from './Styled'
 
 interface RecordCategoryBoxProps {
-  id: string
+  scrollToDiv: string
   imageUrl: string
   title: string
   description: string
 }
 
 function RecordCategoryBox(props: RecordCategoryBoxProps): JSX.Element {
-  const { id, imageUrl, title, description } = props
+  const { scrollToDiv, imageUrl, title, description } = props
+
+  const scroll = () => {
+    const element = document.getElementById(scrollToDiv)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
-    <Box>
+    <Box onClick={scroll}>
       <Image>
         <img src={imageUrl} alt={title} />
       </Image>

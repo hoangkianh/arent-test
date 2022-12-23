@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const MyDiaryTitle = styled.div`
+  margin-bottom: 8px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 22px;

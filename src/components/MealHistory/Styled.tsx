@@ -25,7 +25,6 @@ export const MealItemInner = styled.div`
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition: all 0.3s ease;
   }
 
   &:hover {
