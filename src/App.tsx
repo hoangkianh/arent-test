@@ -6,6 +6,7 @@ import theme from 'theme'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import TopPage from 'pages/TopPage'
+import GoToTop from 'components/GoToTop'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<TopPage />} />
         </Routes>
+        <GoToTop />
         <Footer />
       </Router>
     </ThemeProvider>

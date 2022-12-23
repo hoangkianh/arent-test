@@ -46,3 +46,7 @@
 .healthy-snack:before {
   content: "\e906";
 }
+.healthy-top:before {
+  content: "\e907";
+}
+
