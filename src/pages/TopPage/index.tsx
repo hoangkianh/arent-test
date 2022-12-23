@@ -1,5 +1,5 @@
 import AchievementRate from 'components/AchievementRate'
-import HexagonMenu from 'components/HexagonMenu'
+import MealHistory from 'components/MealHistory'
 import { Col, Container, Row } from 'react-bootstrap'
 
 function TopPage(): JSX.Element {
@@ -14,10 +14,10 @@ function TopPage(): JSX.Element {
         </Row>
       </Container>
       <Container>
-        <Row className="justify-content-center">
-          <Col xs={10}>
-            {/* Hexagon Menu */}
-            <HexagonMenu />
+        {/* Meal History */}
+        <Row>
+          <Col>
+            <MealHistory />
           </Col>
         </Row>
       </Container>

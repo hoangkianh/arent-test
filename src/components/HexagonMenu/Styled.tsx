@@ -12,8 +12,8 @@ export const HexagonWrapper = styled.li`
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 116px;
-  height: 136px;
+  width: 62px;
+  height: 105px;
   background: linear-gradient(
     90deg,
     ${props => props.theme.primary[300]} 8.26%,
@@ -22,14 +22,36 @@ export const HexagonWrapper = styled.li`
   cursor: pointer;
   text-align: center;
   font-family: Inter, sans-serif;
-  font-size: 20px;
-  line-height: 33px;
+  font-size: 13px;
+  line-height: 16px;
   color: #fff;
+
+  @media (min-width: 576px) {
+    width: 100px;
+    height: 125px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 768px) {
+    width: 116px;
+    height: 136px;
+    font-size: 20px;
+    line-height: 33px;
+  }
 
   i {
     display: block;
-    margin-top: 10px;
-    font-size: 40px;
+    font-size: 28px;
+
+    @media (min-width: 576px) {
+      font-size: 32px;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 10px;
+      font-size: 40px;
+    }
   }
 `
 export const TrianglesTop = styled.div`
