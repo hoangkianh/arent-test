@@ -7,6 +7,7 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import TopPage from 'pages/TopPage'
 import GoToTop from 'components/GoToTop'
+import MyRecord from 'pages/MyRecord'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<TopPage />} />
+          <Route path="/my-record" element={<MyRecord />} />
         </Routes>
         <GoToTop />
         <Footer />
