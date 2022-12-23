@@ -1,4 +1,4 @@
-import { MealHistory as Meal } from 'types'
+import { Meal } from 'types'
 import { MealItemWrapper, MealItemInner, MealText } from './Styled'
 
 function MealBox({ meal }: { meal: Meal }): JSX.Element {

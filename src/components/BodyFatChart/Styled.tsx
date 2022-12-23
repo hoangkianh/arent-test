@@ -21,26 +21,6 @@ export const BodyFatChartWrapper = styled.div.attrs(props => ({
     padding: 16px 24px;
   }
 `
-
-export const ChartTitle = styled.p`
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  max-width: 70px;
-  line-height: 18px;
-  letter-spacing: 0.15px;
-  text-transform: uppercase;
-  color: ${props => props.theme.light};
-`
-export const DateText = styled.p`
-  margin-left: 32px;
-  font-family: Inter, sans-serif;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 27px;
-  color: ${props => props.theme.light};
-`
 export const ChartButton = styled(Button)`
   border-radius: 11px;
   background-color: ${props => props.theme.light};

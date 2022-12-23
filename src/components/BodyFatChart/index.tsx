@@ -1,9 +1,8 @@
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement } from 'chart.js'
 import { Line } from 'react-chartjs-2'
-import styled from 'styled-components/macro'
 import bodyFatData from 'data/bodyfat.json'
-import { Button } from 'react-bootstrap'
-import { BodyFatChartWrapper, ChartTitle, DateText, ChartButton } from './Styled'
+import { BodyFatChartWrapper, ChartButton } from './Styled'
+import { BoxTitle, DateText } from 'theme/components'
 
 interface BodyFatChartProps {
   backgroundColor: string
@@ -66,7 +65,7 @@ function BodyFatChart(props: BodyFatChartProps): JSX.Element {
     <BodyFatChartWrapper bgcolor={backgroundColor} height={maxHeight}>
       {title && (
         <div className="d-flex">
-          <ChartTitle>{title}</ChartTitle>
+          <BoxTitle>{title}</BoxTitle>
           <DateText>{`${today.getMonth() + 1}.${today.getDate()}.${today.getFullYear()}`}</DateText>
         </div>
       )}

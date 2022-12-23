@@ -39,3 +39,22 @@ export const GradientButton = styled(Button)`
     z-index: 2;
   }
 `
+export const BoxTitle = styled.p`
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 70px;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: ${props => props.theme.light};
+`
+export const DateText = styled.p`
+  margin-left: 32px;
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27px;
+  color: ${props => props.theme.light};
+`
